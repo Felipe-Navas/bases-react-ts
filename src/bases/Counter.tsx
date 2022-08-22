@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-interface props {
-  initialValue: number
+interface Props {
+  initialValue?: number
 }
 
-export const Counter = ({ initialValue = 0 }: props) => {
+export const Counter = ({ initialValue = 0 }: Props) => {
   const [counter, setCounter] = useState(initialValue)
 
   const handleClick = () => {
